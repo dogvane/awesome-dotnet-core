@@ -71,20 +71,20 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 
 ## 通用
 
-* [ASP.NET Core Documentation](https://docs.asp.net/en/latest/) - The official ASP.NET Core documentation site.
 * [ASP.NET Core Documentation](https://docs.asp.net/en/latest/) - 这个是 ASP.NET Core 官方文档的网站。
-* [.NET Core Documentation](https://docs.microsoft.com/en-us/dotnet/articles/welcome) - Home of the technical documentation for .NET Core, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples.
-* [.NET Core SDK](https://www.microsoft.com/net/core) - .NET Core SDK is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core).
-* [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) - The differrent between the old version and the new version of .NET.
-* [Introducing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard) - The description of what will be going on for .NET Standard 2.0 and the roadmap for some missing parts of the current .NET Standard.
+* [.NET Core Documentation](https://docs.microsoft.com/en-us/dotnet/articles/welcome) - .net Core 官方入门文档，和例子。包含c# F# VB。
+* [.NET Core SDK](https://www.microsoft.com/net/core) - .NET Core SDK 的说明以及开源社区  [GitHub](https://github.com/dotnet/core).
+* [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) - .NET 跨平台标准的说明以及版本之间的差别。
+* [Introducing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard) - .NET 标准 2.0 的介绍
 
-## Frameworks, Libraries and Tools
+## 框架，类库与工具
 
 ### API
 * [autorest](https://github.com/Azure/autorest) - Swagger (OpenAPI) Specification code generator featuring C# and Razor templates. Supports C#, Java, Node.js, TypeScript, Python and Ruby. `4.5.x or above`
-* [aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) - set of libraries which add service API versioning to ASP.NET Web API, OData with ASP.NET Web API, and ASP.NET Core.
-* [AspNetCoreRateLimit](https://github.com/stefanprodan/AspNetCoreRateLimit) - ASP.NET Core rate limiting middleware.
-* [CondenserDotNet](https://github.com/Drawaes/CondenserDotNet) - API Condenser / Reverse Proxy using Kestrel and Consul, Including light weight consul library.
+* [autorest](https://github.com/Azure/autorest) - 一个生成OpenAPI访问客户端的工具（本体使用nodejs来运行）。输出格式包含C#, Java, Node.js, TypeScript, Python， Ruby.
+* [aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) - 给 ASP.NET Web API, OData with ASP.NET Web API, ASP.NET Core，写的REST API接口增加版本控制。（简化 http://api.xxx.com/v1.0，http://api.xxx.com/v2.0 这样的API格式的实现）
+* [AspNetCoreRateLimit](https://github.com/stefanprodan/AspNetCoreRateLimit) - 一个针对 ASP.NET Core 访问控制的中间件。可以对IP或者客户端ID增加每秒，每分钟或者每小时访问次数的限制。
+* [CondenserDotNet](https://github.com/Drawaes/CondenserDotNet) - 使用Kestrel和Consul构建的轻量级微服务框架。（文档不多，start也少，国内和国外基本没相关介绍，建议养肥了再关注吧）
 * [Flurl](https://github.com/tmenier/Flurl) - Fluent URL builder and testable HTTP for .NET [http://tmenier.github.io/Flurl](http://tmenier.github.io/Flurl).
 * GraphQL
   * [graphql-aspnetcore](https://github.com/JuergenGutsch/graphql-aspnetcore) - ASP.NET Core MiddleWare to create a GraphQL end-point.
