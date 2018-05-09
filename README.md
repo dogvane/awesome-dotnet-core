@@ -85,15 +85,15 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) - 给 ASP.NET Web API, OData with ASP.NET Web API, ASP.NET Core，写的REST API接口增加版本控制。（简化 http://api.xxx.com/v1.0，http://api.xxx.com/v2.0 这样的API格式的实现）
 * [AspNetCoreRateLimit](https://github.com/stefanprodan/AspNetCoreRateLimit) - 一个针对 ASP.NET Core 访问控制的中间件。可以对IP或者客户端ID增加每秒，每分钟或者每小时访问次数的限制。
 * [CondenserDotNet](https://github.com/Drawaes/CondenserDotNet) - 使用Kestrel和Consul构建的轻量级微服务框架。（文档不多，start也少，国内和国外基本没相关介绍，建议养肥了再关注吧）
-* [Flurl](https://github.com/tmenier/Flurl) - Fluent URL builder and testable HTTP for .NET [http://tmenier.github.io/Flurl](http://tmenier.github.io/Flurl).
-* GraphQL
-  * [graphql-aspnetcore](https://github.com/JuergenGutsch/graphql-aspnetcore) - ASP.NET Core MiddleWare to create a GraphQL end-point.
-  * [graphql-convention](https://github.com/graphql-dotnet/conventions) - This library is a complementary layer on top that allows you to automatically wrap your .NET classes into GraphQL schema definitions using existing property getters and methods as field resolvers
-  * [graphiql-dotnet](https://github.com/JosephWoodward/graphiql-dotnet) - GraphiQL middleware for ASP.NET Core.
-  * [graphql-dotnetcore](https://github.com/mkmarek/graphql-dotnetcore) - GraphQL for .NET Core based on [https://github.com/graphql/graphql-js](https://github.com/graphql/graphql-js).
-  * [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphQL for .NET.
-  * [FSharp.Data.GraphQL](https://github.com/fsprojects/FSharp.Data.GraphQL) - FSharp implementation of Facebook GraphQL query language [https://fsprojects.github.io/FSharp.Data.GraphQL](https://fsprojects.github.io/FSharp.Data.GraphQL).
-  * [parser](https://github.com/graphql-dotnet/parser) - A lexer and parser for GraphQL in .NET.
+* [Flurl](https://github.com/tmenier/Flurl) - 以 Fluent 方式构建 URL 并进行HTTP请求测试。[http://tmenier.github.io/Flurl](http://tmenier.github.io/Flurl).
+* GraphQL - （GraphQL 是一个用于 API 的查询语言，是一个使用基于类型系统来执行查询的服务端运行时（类型系统由你的数据定义）。GraphQL 并没有和任何特定数据库或者存储引擎绑定，而是依靠你现有的代码和数据支撑。以上来自：[http://graphql.cn/](http://graphql.cn/learn/)）
+  * [graphql-aspnetcore](https://github.com/JuergenGutsch/graphql-aspnetcore) - GraphQL在 ASP.NET Core 的中间件。（start:69 @ 2018/5/9）
+  * [graphql-convention](https://github.com/graphql-dotnet/conventions) - 一个类库可以根据对象的属性及方法定义自动生成 GraphQL 的 Schema。
+  * [graphiql-dotnet](https://github.com/JosephWoodward/graphiql-dotnet) - GraphiQL在 ASP.NET Core 下的中间件（start:63 @ 2018/5/9）
+  * [graphql-dotnetcore](https://github.com/mkmarek/graphql-dotnetcore) - GraphiQL在 ASP.NET Core 下的中间件，基于[https://github.com/graphql/graphql-js](https://github.com/graphql/graphql-js).（start:80 @ 2018/5/9） 
+  * [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphiQL在 .Net 下的实现。（start:1957 @2018/5/9) 这个项目是.Net下的项目，暂时不支持.net core，但可以用Mono在Linux下运行。独立运行不依赖web服务器。
+  * [FSharp.Data.GraphQL](https://github.com/fsprojects/FSharp.Data.GraphQL) - GraphQL在F#下的实现 [https://fsprojects.github.io/FSharp.Data.GraphQL](https://fsprojects.github.io/FSharp.Data.GraphQL).
+  * [parser](https://github.com/graphql-dotnet/parser) - .net下为GraphQL提供的词法分析与解析器。
 * [halcyon](https://github.com/visualeyes/halcyon) - HAL implementation for ASP.NET.
 * [JSON API .NET Core](https://github.com/Research-Institute/json-api-dotnet-core) - Framework for building json:api compliant APIs with the goal of eliminating RESTful boilerplate.
 * [LightNode](https://github.com/neuecc/LightNode) - Micro RPC/REST Framework built on OWIN [http://neuecc.github.io/LightNode](http://neuecc.github.io/LightNode).
