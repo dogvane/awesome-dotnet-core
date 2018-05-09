@@ -220,8 +220,8 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
   * [prometheus-net](https://github.com/prometheus-net/prometheus-net) - .NET Client for [https://prometheus.io](https://prometheus.io).
 
 ### Compression
-* [lz4net](https://github.com/MiloszKrajewski/lz4net) - Ultra fast compression algorithm for all .NET platforms.
-* [sharpcompress](https://github.com/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
+* [lz4net](https://github.com/MiloszKrajewski/lz4net) - 一个支持.net全平台的超级快的压缩算法LZ4。看介绍，可以单核400M/s压缩，2G/s解压，基本上达到内存的访问极限，压缩比比gzip要差一些。关于不同压缩算法的效率可以看[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO](https://blog.csdn.net/leilonghao/article/details/73200859)。
+* [sharpcompress](https://github.com/adamhathcock/sharpcompress) - 一个完全用托管代码写的压缩组件，支持zip/tar/bzip2/gizp。
 
 ### Compilers, Transpilers and Languages
 * [Fable](https://github.com/fable-compiler/Fable) - F# to JavaScript Compiler.
