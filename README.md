@@ -94,18 +94,18 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
   * [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet) - GraphiQL在 .Net 下的实现。（start:1957 @2018/5/9) 这个项目是.Net下的项目，暂时不支持.net core，但可以用Mono在Linux下运行。独立运行不依赖web服务器。
   * [FSharp.Data.GraphQL](https://github.com/fsprojects/FSharp.Data.GraphQL) - GraphQL在F#下的实现 [https://fsprojects.github.io/FSharp.Data.GraphQL](https://fsprojects.github.io/FSharp.Data.GraphQL).
   * [parser](https://github.com/graphql-dotnet/parser) - .net下为GraphQL提供的词法分析与解析器。
-* [halcyon](https://github.com/visualeyes/halcyon) - HAL implementation for ASP.NET.
-* [JSON API .NET Core](https://github.com/Research-Institute/json-api-dotnet-core) - Framework for building json:api compliant APIs with the goal of eliminating RESTful boilerplate.
-* [LightNode](https://github.com/neuecc/LightNode) - Micro RPC/REST Framework built on OWIN [http://neuecc.github.io/LightNode](http://neuecc.github.io/LightNode).
-* [NetCoreStack.Proxy](https://github.com/NetCoreStack/Proxy) - The type-safe, distributed REST library for .NET Standard 2.0 (NetCoreStack Flying Proxy)
-* [NSwag](https://github.com/NSwag/NSwag) - The Swagger API toolchain for .NET, Web API and TypeScript [http://NSwag.org](http://NSwag.org).
-* [OData](https://github.com/OData/WebApi/tree/feature/netcore) - The Open Data Protocol (OData) enables the creation of HTTP-based data services, which allow resources identified using Uniform Resource Identifiers (URIs) and defined in an abstract data model, to be published and edited by Web clients using simple HTTP messages.
-* [refit](https://github.com/paulcbetts/refit) - The automatic type-safe REST library for Xamarin and .NET [http://paulcbetts.github.io/refit/](http://paulcbetts.github.io/refit/).
-* [RESTClient .NET](https://bitbucket.org/MelbourneDeveloper/restclient-.net) - Simple REST Client for all .NET platforms.
-* [RestEase](https://github.com/canton7/RestEase) - Easy-to-use typesafe REST API client library, which is simple and customisable.
-* [RestLess](https://github.com/letsar/RestLess) - The automatic type-safe-reflectionless REST API client library for .Net Standard.
-* [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) - Seamlessly adds a swagger to WebApi projects.
-* [WebAPIContrib for ASP.NET CORE](https://github.com/WebApiContrib/WebAPIContrib.Core) - Community Contributions for ASP.NET Core.
+* [halcyon](https://github.com/visualeyes/halcyon) - halcyon 是 HAL(Hypertext Application Language) 在 asp.net 下的实现，支持 asp.net 和 asp.net core。HAL是一种简单的数据格式，它能以一种简单、统一的形式，在API中引入超链接特性，使得API的可发现性（discoverable）更强，并具有自描述的特点。更详细的介绍常见[度娘](https://www.baidu.com/s?wd=HAL%20json)
+* [JSON API .NET Core](https://github.com/Research-Institute/json-api-dotnet-core) - 用来构建一个兼容[json:api](http://jsonapi.org/)样式的webapi框架。它有点类似HAL。
+* [LightNode](https://github.com/neuecc/LightNode) - 一个实现[OWIN](https://www.baidu.com/s?wd=OWIN)的微型 RPC/REST 框架。[http://neuecc.github.io/LightNode](http://neuecc.github.io/LightNode).
+* [NetCoreStack.Proxy](https://github.com/NetCoreStack/Proxy) - 一个类型安全的，用.NET Standard 2.0标准实现的REST代理库。
+* [NSwag](https://github.com/NSwag/NSwag) - NSwag 是 Swagger/OpenAPIThe 在.Net，Web API, TypeScript 下的工具链。详细内容访问：[http://NSwag.org](http://NSwag.org).工具链简单说就是提供了一个[NSwagStudio](https://github.com/NSwag/NSwag/wiki/NSwagStudio)，或者的[命令行工具](https://github.com/RSuter/NSwag/wiki/CommandLine)，甚至直接引用相关的代码生成OpenAPI的客户端访问代理类，输出类型包括c#,TypeScrip(包含但不仅限于：jQuery, AngularJS, Angular 2+, Aurelia, KnockoutJS )
+* [OData](https://github.com/OData/WebApi/tree/feature/netcore) - [OData](https://www.baidu.com/s?wd=odata) = Open Data Protocol（是一个设计和使用RESTful API的标准）。OData项目就是帮你在 .net 和 .net core 下帮你实现这套标准的库。
+* [refit](https://github.com/paulcbetts/refit) - 帮你自动构建一个访问 REST 的类库，支持.NET全版本和Xamarin。[http://paulcbetts.github.io/refit/](http://paulcbetts.github.io/refit/).（这个和上面的NSwag实现的功能类似，但是它更灵活一些，访问的代理类不会像代码生成那样，根据接口的名称和产生的名称生成固定的代理类。而是可以按照自己的医院写一个接口，然后用标签（Attribute)的方式在的方法上注明要访问REST下的那个API）
+* [RESTClient .NET](https://bitbucket.org/MelbourneDeveloper/restclient-.net) - 一个简单的 REST 客户端，支持所有.NET平台
+* [RestEase](https://github.com/canton7/RestEase) - 一个简单易用的 REST API 客户端，从[refit](https://github.com/paulcbetts/refit)改造过来的版本。（start有300多个，refit有2500个@2018/5/20，但首页的文档详细程度比refit要多很多，可以做入门介绍。）
+* [RestLess](https://github.com/letsar/RestLess) - 也是一个 REST API 客户端，作者灵感来自于[refit](https://github.com/paulcbetts/refit)，介绍里重点介绍了和refit的性能比较，简单说就是比refit快了一倍（在安卓端测试）。
+* [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) - 我觉得不需要介绍了，每次写web api需要配置swagger是都会用，重点是，谁还能再把对它的配置再简化一下。
+* [WebAPIContrib for ASP.NET CORE](https://github.com/WebApiContrib/WebAPIContrib.Core) - 对于asp.net和asp.net core下的web api项目的一些社区代码做收集，形成的一个辅助性质的类库。.net版和.net core版的实现的功能模块还不完全一样。但都实现了帮助你的web api 以 Bson,CSV,PlainText,Jsopn,MessagePack,Protobuf,Yaml，这几种协议进行返回。
 
 ### Application Frameworks
 * [ABP](https://github.com/aspnetboilerplate/aspnetboilerplate) - ASP.NET Boilerplate is a general purpose application framework especially designed for new modern web applications. It uses already familiar tools and implements best practices arround them to provide you a SOLID development experience.
