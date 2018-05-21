@@ -11,9 +11,9 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 ## Contents
 
 * [General](#general)
-* [Frameworks, Libraries and Tools](#frameworks-libraries-and-tools)
+* [框架，类库与工具](#框架，类库与工具)
   * [API](#api)
-  * [Application Frameworks](#application-frameworks)
+  * [应用程序框架](#应用程序框架)
   * [Application Templates](#application-templates)
   * [Authentication and Authorization](#authentication-and-authorization)
   * [Blockchain](#blockchain)
@@ -80,7 +80,6 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 ## 框架，类库与工具
 
 ### API
-* [autorest](https://github.com/Azure/autorest) - Swagger (OpenAPI) Specification code generator featuring C# and Razor templates. Supports C#, Java, Node.js, TypeScript, Python and Ruby. `4.5.x or above`
 * [autorest](https://github.com/Azure/autorest) - 一个生成OpenAPI访问客户端的工具（本体使用nodejs来运行）。输出格式包含C#, Java, Node.js, TypeScript, Python， Ruby.
 * [aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) - 给 ASP.NET Web API, OData with ASP.NET Web API, ASP.NET Core，写的REST API接口增加版本控制。（简化 http://api.xxx.com/v1.0，http://api.xxx.com/v2.0 这样的API格式的实现）
 * [AspNetCoreRateLimit](https://github.com/stefanprodan/AspNetCoreRateLimit) - 一个针对 ASP.NET Core 访问控制的中间件。可以对IP或者客户端ID增加每秒，每分钟或者每小时访问次数的限制。
@@ -107,26 +106,27 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) - 我觉得不需要介绍了，每次写web api需要配置swagger是都会用，重点是，谁还能再把对它的配置再简化一下。
 * [WebAPIContrib for ASP.NET CORE](https://github.com/WebApiContrib/WebAPIContrib.Core) - 对于asp.net和asp.net core下的web api项目的一些社区代码做收集，形成的一个辅助性质的类库。.net版和.net core版的实现的功能模块还不完全一样。但都实现了帮助你的web api 以 Bson,CSV,PlainText,Jsopn,MessagePack,Protobuf,Yaml，这几种协议进行返回。
 
-### Application Frameworks
-* [ABP](https://github.com/aspnetboilerplate/aspnetboilerplate) - ASP.NET Boilerplate is a general purpose application framework especially designed for new modern web applications. It uses already familiar tools and implements best practices arround them to provide you a SOLID development experience.
-* [Aeron.NET](https://github.com/AdaptiveConsulting/Aeron.NET) - Efficient reliable UDP unicast, UDP multicast, and IPC message transport - .NET port of Aeron.
-* [akka.net](https://github.com/akkadotnet/akka.net) - Toolkit and runtime for building highly concurrent, distributed, and fault tolerant event-driven applications on .NET & Mono.
-* [ASP.NET MVC](https://github.com/aspnet/Mvc) - Model view controller framework for building dynamic web sites with clean separation of concerns, including the merged MVC, Web API, and Web Pages w/ Razor.
-* [CQRSlite](https://github.com/gautema/CQRSlite) - Lightweight framework for helping writing CQRS and Eventsourcing applications in C#.
-* [DotNetty](https://github.com/Azure/DotNetty) - Port of netty, event-driven asynchronous network application framework.
-* [EmbedIO](https://github.com/unosquare/embedio) - A tiny, cross-platform, module based web server for .NET Framework and .NET Core.
-* [EventFlow](https://github.com/eventflow/EventFlow) - Async/await first CQRS+ES and DDD framework for .NET.
-* [ExtCore](https://github.com/ExtCore) - Free, open source and cross-platform framework for creating modular and extendable web applications based on ASP.NET Core 1.0.
-* [Halibut](https://github.com/OctopusDeploy/Halibut) - A secure communication stack for .NET using JSON-RPC over SSL.
-* [grpc](https://github.com/grpc/grpc/tree/master/src/csharp) - Remote Procedure Calls (RPCs) provide a useful abstraction for building distributed applications and services. The libraries in this repository provide a concrete implementation of the gRPC protocol, layered over HTTP/2. These libraries enable communication between clients and servers using any combination of the supported languages.
-* [MassTransit](https://github.com/MassTransit/MassTransit) - Distributed Application Framework for .NET. 
-* [microdot](https://github.com/gigya/microdot) - An open source .NET microservices framework.
-* [Nancy](https://github.com/NancyFx/Nancy) - Lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono.
-* [orleans](https://github.com/dotnet/orleans) - Framework that provides a straight-forward approach to building distributed high-scale computing applications, without the need to learn and apply complex concurrency or other scaling patterns.
-* [protoactor-dotnet](https://github.com/AsynkronIT/protoactor-dotnet) - Ultra fast distributed actors for Golang and C# [http://proto.actor](http://proto.actor).
-* [RService.io](https://github.com/Stoom/RService.IO) - ASP.Net Core RESTful microservice framework that focusing on speed and ease of use.
-* [ServiceStack](https://github.com/ServiceStack/ServiceStack) - Thoughtfully architected, obscenely fast, thoroughly enjoyable web services for all [https://servicestack.net](https://servicestack.net).
-* [Steeltoe OSS](https://github.com/SteelToeOSS) - .NET toolkit for common microservice patterns.
+### 应用程序框架
+* [ABP](https://github.com/aspnetboilerplate/aspnetboilerplate) - 一个基于asp.net的应用程序框架，.net圈里应该都听过的，没听过可以上[cnblogs.com](http://zzk.cnblogs.com/s?t=b&w=abp)看看相关介绍。简单说，当你新开一个要比简单的三层架构要复杂很多的项目时，建议看看它，首次使用可以直接按照框架来，熟悉之后再按照实际项目情况进行优化和改进。
+* [Aeron.NET](https://github.com/AdaptiveConsulting/Aeron.NET) - 一个实现了高效可靠的UDP单播，组播和IPC消息协议的组件库。它是[Aeron](https://github.com/real-logic/Aeron)在.NET下的实现。Aeron则是java和c++下UDP组件库。简单说你可以在.NET下发UDP，java项目下收到对应消息，中间的消息传递都是安全可靠和高效的。
+* [akka.net](https://github.com/akkadotnet/akka.net) - 一个用于编写高并发，容错的基于事件驱动的分布式系统的应用程序框架。更详细的介绍看[百度 akka.net](https://www.baidu.com/s?wd=akka.net)。类似的流行的还有[orleans](https://github.com/dotnet/orleans)
+* [ASP.NET MVC](https://github.com/aspnet/Mvc) - 需要介绍吗，不需要了吧。
+* [CQRSlite](https://github.com/gautema/CQRSlite) - 一个轻量级的框架帮你去写 CQRS/ES 模型的应用程序。（@star:540）[不清楚问度娘](https://www.baidu.com/s?&wd=CQRS%2FES)。国内也有人做了一套类似的框架[ENode](https://github.com/tangxuehua/enode)，因为不是英文的，老外没收录而已。
+* [ENode](https://github.com/tangxuehua/enode) - ENode is a framework aims to help us developing ddd, cqrs, eda, and event sourcing style applications.（@star:1100）
+* [DotNetty](https://github.com/Azure/DotNetty) - 事件驱动的异步网络框架，源自java的[netty](https://github.com/netty/netty)，微软的[Azure团队](https://github.com/Azure)负责维护。使用方法问[度娘](https://www.baidu.com/s?wd=DotNetty)
+* [EmbedIO](https://github.com/unosquare/embedio) - 一个超小的可跨平台的基于模块的Web服务器组件。(@star:417)通常是给你写的应用里集成了一个web服务器，当你部署到服务器后，偷偷的给自己开了一个后门端口，然后通过这个端口以web方式进行服务器管理。（以上说辞是根据官方文档里介绍整理出来的）
+* [EventFlow](https://github.com/eventflow/EventFlow) - 用 Async/await 写的 CQRS/ES,DDD 框架（@star:640）。
+* [ExtCore](https://github.com/ExtCore) - 一个基于asp.net core 的基于模块化可扩展的web应用框架。(大家还记得写.net的web应用程序在iis上的部署流程吗，直接把.dll和.aspx文件复制过去就ok了。到.net core 部署到 linux 时，得先杀掉dotnet进程，复制文件，重新启动。现在有了ExtCore，你只需要和iis一样，直接复制.dll文件就可以了。)
+* [Halibut](https://github.com/OctopusDeploy/Halibut) - .NET下的使用SSL做JSON-RPC的安全通讯组件。它是 [Octopus Deploy](https://octopus.com/) 持续集成部署系统的后台通讯组件。它除了普通的request/response这种应答响应方式外，还提供了polling（轮询）模式。简单说，传统的应用服务器是客户端发起tcp连接请求到服务器端，而halibut可以反过来操作，就是由服务端反过来连接到事实上的客户端。这也就是这套持续集成系统要叫做Octopus(章鱼)的原因。
+* [grpc](https://github.com/grpc/grpc/tree/master/src/csharp) - [gRPC](https://github.com/grpc/grpc)在.net下的实现。gPRC的概念问[度娘](https://www.baidu.com/s?wd=gRPC)
+* [MassTransit](https://github.com/MassTransit/MassTransit) - 基于消息，松耦合，异步通讯来获得高可用，高可靠与可扩展的分布式框架。（@star:1500）国内还是有一些人在研究的，可以问[度娘](https://www.baidu.com/s?wd=MassTransit)了解。
+* [microdot](https://github.com/gigya/microdot) - 一个微服务框架，国内研究的人还不多(@star:600)
+* [Nancy](https://github.com/NancyFx/Nancy) - 一个轻量级的web服务器框架。（@star:6112）看到这么多是star，老牌项目大家可以放心食用。
+* [orleans](https://github.com/dotnet/orleans) - 微软出的分布式框架，不过多介绍了，大家自行[百度 Orleans](https://www.baidu.com/s?wd=Orleans)
+* [protoactor-dotnet](https://github.com/AsynkronIT/protoactor-dotnet) -  也是一个基于 Actor 模式的分布式框架。[http://proto.actor](http://proto.actor).看作者的项目列表，有 go .net kotlin python 的实现。go的star最高(@star:2168)，其次是.net(@star:619)，kotlin(@star:105)和python(@star:43)应该是才开始进行开发，所以关注的人还不多。
+* [RService.io](https://github.com/Stoom/RService.IO) - 一个轻量级的REST微服务框架，关注的人不多(@star:34)，而且也断更了，不用太关注他了。
+* [ServiceStack](https://github.com/ServiceStack/ServiceStack) - 一个适用所有人的简单快速的结构设计良好的web服务框架。 [https://servicestack.net](https://servicestack.net).(@star:4229) 认识它是当年有人在群里问 ServiceStack.Redis 4.0 组件如何破解。不知道那位仁兄现在是否已经解决了这个问题。
+* [Steeltoe OSS](https://github.com/SteelToeOSS) - 基于云服务的微服务工具包。国内的用户就不用关注了。
 
 ### Application Templates
 * [ASP.NET Core Boilerplate](https://github.com/ASP-NET-Core-Boilerplate/Templates) - A professional ASP.NET MVC template for building secure, fast, robust and adaptable web applications or sites. It provides the minimum amount of code required on top of the default MVC template provided by Microsoft.
