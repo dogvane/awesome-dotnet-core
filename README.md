@@ -116,7 +116,7 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [DotNetty](https://github.com/Azure/DotNetty) - 事件驱动的异步网络框架，源自java的[netty](https://github.com/netty/netty)，微软的[Azure团队](https://github.com/Azure)负责维护。使用方法问[度娘](https://www.baidu.com/s?wd=DotNetty)
 * [EmbedIO](https://github.com/unosquare/embedio) - 一个超小的可跨平台的基于模块的Web服务器组件。(@star:417)通常是给你写的应用里集成了一个web服务器，当你部署到服务器后，偷偷的给自己开了一个后门端口，然后通过这个端口以web方式进行服务器管理。（以上说辞是根据官方文档里介绍整理出来的）
 * [EventFlow](https://github.com/eventflow/EventFlow) - 用 Async/await 写的 CQRS/ES,DDD 框架（@star:640）。
-* [ExtCore](https://github.com/ExtCore) - 一个基于asp.net core 的基于模块化可扩展的web应用框架。(大家还记得写.net的web应用程序在iis上的部署流程吗，直接把.dll和.aspx文件复制过去就ok了。到.net core 部署到 linux 时，得先杀掉dotnet进程，复制文件，重新启动。现在有了ExtCore，你只需要和iis一样，直接复制.dll文件就可以了。)
+* [ExtCore](https://github.com/ExtCore) - 一个基于asp.net core 的基于模块化可扩展的web应用框架。
 * [Halibut](https://github.com/OctopusDeploy/Halibut) - .NET下的使用SSL做JSON-RPC的安全通讯组件。它是 [Octopus Deploy](https://octopus.com/) 持续集成部署系统的后台通讯组件。它除了普通的request/response这种应答响应方式外，还提供了polling（轮询）模式。简单说，传统的应用服务器是客户端发起tcp连接请求到服务器端，而halibut可以反过来操作，就是由服务端反过来连接到事实上的客户端。这也就是这套持续集成系统要叫做Octopus(章鱼)的原因。
 * [grpc](https://github.com/grpc/grpc/tree/master/src/csharp) - [gRPC](https://github.com/grpc/grpc)在.net下的实现。gPRC的概念问[度娘](https://www.baidu.com/s?wd=gRPC)
 * [MassTransit](https://github.com/MassTransit/MassTransit) - 基于消息，松耦合，异步通讯来获得高可用，高可靠与可扩展的分布式框架。（@star:1500）国内还是有一些人在研究的，可以问[度娘](https://www.baidu.com/s?wd=MassTransit)了解。
@@ -129,16 +129,16 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [Steeltoe OSS](https://github.com/SteelToeOSS) - 基于云服务的微服务工具包。国内的用户就不用关注了。
 
 ### Application Templates
-* [ASP.NET Core Boilerplate](https://github.com/ASP-NET-Core-Boilerplate/Templates) - A professional ASP.NET MVC template for building secure, fast, robust and adaptable web applications or sites. It provides the minimum amount of code required on top of the default MVC template provided by Microsoft.
-* [ASP.NET-MVC-Template](https://github.com/NikolayIT/ASP.NET-MVC-Template) - A ready-to-use templates for ASP.NET MVC 5 and ASP.NET Core with repositories, services, models mapping and DI and StyleCop warnings fixed.
-* [AddFeatureFolders](https://github.com/OdeToCode/AddFeatureFolders) - Enable feature folders for MVC controllers and views in ASP.NET Core.
-* [Angular Visual Studio Webpack Starter](https://github.com/damienbod/AngularWebpackVisualStudio) - Template for Webpack, Visual Studio, ASP.NET Core and Angular. Both the client and the server side of the application are implemented inside one ASP.NET Core project which makes it easier to deploy.
-* [JavaScriptServices](https://github.com/aspnet/JavaScriptServices) - Microsoft ASP.NET Core JavaScript Services.
-* [kendo-ui-core](https://github.com/telerik/kendo-ui-core) - An HTML5, jQuery-based widget library for building modern web apps. [http://www.telerik.com/kendo-ui](http://www.telerik.com/kendo-ui).
-* [QuickApp](https://github.com/emonney/QuickApp) - ASP.NET Core / Angular4 startup project template with complete login, user and role management.
-* [Scaffolder](https://github.com/dncuug/scaffolder) - Lets you create extensible data-driven Web applications by automatically generated UI for each table in the database and  lets create a applications for viewing and editing data based on the schema of the data. 
-* [Serenity](https://github.com/volkanceylan/Serenity) - Serenity is an ASP.NET MVC / TypeScript application platform designed to simplify and shorten development of data-centric business applications with a service based architecture.
-* [Toucan](https://github.com/mrellipse/toucan) - Boilerplate for building single page apps. Server is multi-project .Net Core solution designed around SOLID principles. Client is TypeScript 2, Vuejs 2, Vuex 2.
+* [ASP.NET Core Boilerplate](https://github.com/ASP-NET-Core-Boilerplate/Templates) - 一个专业的ASP.NET MVC模板，用于构建安全、快速、健壮和可适应的Web应用程序或站点。它提供了在微软提供的默认MVC模板之上所需的最小代码量。你可以通过 `dotnet new --install "Boxed.Templates::*"` 将模板加入系统，然后用 `dotnet new api` 的方式进行初始化。可以 `dotnet new api --help` 了解在初始化时，能配置那些参数。(@star:1240)
+* [ASP.NET-MVC-Template](https://github.com/NikolayIT/ASP.NET-MVC-Template) - 一个开箱即用的asp.net mvc模板，有mvc5, .net core, .net core with Angular 三个。俄语好的可以看的[教学视频](https://www.youtube.com/watch?v=xhoBt9MscrY)。(@star:154)
+* [AddFeatureFolders](https://github.com/OdeToCode/AddFeatureFolders) - 大家自己去看吧，我没看懂是怎么用的。Enable feature folders for MVC controllers and views in ASP.NET Core.
+* [Angular Visual Studio Webpack Starter](https://github.com/damienbod/AngularWebpackVisualStudio) - 一个集成了asp.net core Angular Webpack Visual Studio的模板。它的好处是让你的前端代码与asp.net core代码在一起，发布的时候就更方便一些。
+* [JavaScriptServices](https://github.com/aspnet/JavaScriptServices) - 微软出的一个能够让你在asp.net core里调用nodejs服务。[度娘](https://www.baidu.com/s?ie=UTF-8&wd=JavaScriptServices)里的介绍比较少，如果实在需要互相调用，可以问谷沟。
+* [kendo-ui-core](https://github.com/telerik/kendo-ui-core) - 一个基于JQuery，HTML5构建web apps的模板。[http://www.telerik.com/kendo-ui](http://www.telerik.com/kendo-ui).(@star:1945)
+* [QuickApp](https://github.com/emonney/QuickApp) - 一个基于 Angular5 ASP.NET Core Bootstrap4 的项目模板，并集成了用户，登录(IdentityServer4)，角色管理等模块。
+* [Scaffolder](https://github.com/dncuug/scaffolder) - 这是一个数据库的脚手架工具，会根据数据库表的结构生成对应的管理界面，可以查看和修改数据库里的数据。适合拿来做简单的后台管理工具，不过作者是俄国人，blog也是俄文，看不懂啊。(@star:96)
+* [Serenity](https://github.com/volkanceylan/Serenity) - 也是一个可以方便构造后台管理界面的应用程序模板。大家可以适度关注一下。（@star:1400）
+* [Toucan](https://github.com/mrellipse/toucan) - 一个构建SPA（单页面）模板，服务端用 .net core，按照SOLID的设计原则来开发，客户端用TypeScript 2, Vuejs 2, Vuex2.(@star:125) 项目创建时间比较晚，所以star不高，但它的客户端用vuejs，国内的开发可以适度关注一下，毕竟vuejs比angular,reactjs要简单一些。
 
 ### Authentication and Authorization
 * [AspNet.Security.OpenIdConnect.Server](https://github.com/aspnet-contrib/AspNet.Security.OpenIdConnect.Server) - OpenID Connect/OAuth2 server framework for OWIN/Katana and ASP.NET Core.
