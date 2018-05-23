@@ -15,9 +15,9 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
   * [API](#api)
   * [应用程序框架](#应用程序框架)
   * [Application Templates](#application-templates)
-  * [Authentication and Authorization](#authentication-and-authorization)
-  * [Blockchain](#blockchain)
-  * [Bot](#bot)
+  * [认证和授权](#authentication-and-authorization)
+  * [区块链](#区块链)
+  * [机器人](#bot)
   * [Build Automation](#build-automation)
   * [Bundling and Minification](#bundling-and-minification)
   * [Caching](#caching)
@@ -141,40 +141,40 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [Toucan](https://github.com/mrellipse/toucan) - 一个构建SPA（单页面）模板，服务端用 .net core，按照SOLID的设计原则来开发，客户端用TypeScript 2, Vuejs 2, Vuex2.(@star:125) 项目创建时间比较晚，所以star不高，但它的客户端用vuejs，国内的开发可以适度关注一下，毕竟vuejs比angular,reactjs要简单一些。
 
 ### Authentication and Authorization
-* [AspNet.Security.OpenIdConnect.Server](https://github.com/aspnet-contrib/AspNet.Security.OpenIdConnect.Server) - OpenID Connect/OAuth2 server framework for OWIN/Katana and ASP.NET Core.
-* [Auth0](https://github.com/auth0/auth0.net) - Hosted, enterprise-grade platform for modern identity.
-* [Identity](https://github.com/aspnet/Identity) - ASP.NET Core Identity is the membership system for building ASP.NET Core web applications, including membership, login, and user data.
-* [IdentityServer](https://github.com/IdentityServer/IdentityServer4) - IdentityServer for ASP.NET Core 1.0 & 2.0
+* [AspNet.Security.OpenIdConnect.Server](https://github.com/aspnet-contrib/AspNet.Security.OpenIdConnect.Server) - OpenID Connect/OAuth2 的服务器框架。(@star:394)
+* [Auth0](https://github.com/auth0/auth0.net) - Auth0 的客户端 api
+* [Identity](https://github.com/aspnet/Identity) - 微软 asp.net 出的身份验证，登录以及授权系统。
+* [IdentityServer](https://github.com/IdentityServer/IdentityServer4) - 微软身份验证，授权系统的服务端。
   * [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework) - EntityFramework persistence layer
   * [IdentityServer4.MongoDB](https://github.com/diogodamiani/IdentityServer4.MongoDB) - MongoDB persistence layer
   * [IdentityServer4.EntityFrameworkCore](https://github.com/2020IP/TwentyTwenty.IdentityServer4.EntityFrameworkCore) - Entity Framework Core persistence layer
   * [IdentityServer4.Templates](https://github.com/IdentityServer/IdentityServer4.Templates) - dotnet cli templates for IdentityServer4.
-* [openiddict](https://github.com/openiddict/openiddict-core) - Easy-to-use OpenID Connect server for ASP.NET Core.
-* [stormpath-sdk](https://github.com/stormpath/stormpath-sdk-dotnet) - Build [simple, secure web applications](https://github.com/stormpath/stormpath-aspnetcore) with Stormpath and ASP.NET Core.
-* [stuntman](https://github.com/ritterim/stuntman) - Library for impersonating users during development leveraging ASP.NET Identity.
+* [openiddict](https://github.com/openiddict/openiddict-core) - ASP.NET Core 下的OpenID连接服务器，简单易用.(@star:640)，看文档不是很复杂
+* [stormpath-sdk](https://github.com/stormpath/stormpath-sdk-dotnet) - Build [simple, secure web applications](https://github.com/stormpath/stormpath-aspnetcore) with Stormpath and ASP.NET Core. Stormpath是一个云端的认证服务器，貌似收费的，这个是.net下的客户端sdk。
+* [stuntman](https://github.com/ritterim/stuntman) - 一个能在开发阶段，帮你模拟不同登录用户的库。
 
-### Blockchain
-* [NBitcoin](https://github.com/MetacoSA/NBitcoin) - Comprehensive Bitcoin library for the .NET framework.
-* [NEO](https://github.com/neo-project/neo) - Open Network For Smart Economy.
-* [Nethereum](https://github.com/Nethereum) - Bringing the love of Ethereum to .NET.
-* [StratisBitcoinFullNode](https://github.com/stratisproject/StratisBitcoinFullNode) - Simple and affordable end-to-end solutions for development, testing and deployment of native C# blockchain applications on the .Net framework.
+### 区块链
+* [NBitcoin](https://github.com/MetacoSA/NBitcoin) - 比特币在.net下的库。
+* [NEO](https://github.com/neo-project/neo) - 一种智能经济分布式网络，国内发布的，小蚁区块链负责维护。
+* [Nethereum](https://github.com/Nethereum) - .net 下接入以太坊的组件。
+* [StratisBitcoinFullNode](https://github.com/stratisproject/StratisBitcoinFullNode) - 貌似是一个比特币在.net下的实现。
 
 ### Bot
-* [NadekoBot](https://github.com/Kwoth/NadekoBot) - Open source, general-purpose Discord chat bot written in C#.
+* [NadekoBot](https://github.com/Kwoth/NadekoBot) - c#写的聊天机器人。
 
 ### Build Automation
-* [cake-build](https://github.com/cake-build/cake) - Cross platform build automation system. [http://cakebuild.net](http://cakebuild.net).
-* [CatLight](https://catlight.io) - Status notifier for developers that monitors builds and tasks in the project. Built using .Net Core and Electron.
-* [Colorful.Console](https://github.com/tomakita/Colorful.Console) - Style your C# console output! [http://colorfulconsole.com](http://colorfulconsole.com).
+* [cake-build](https://github.com/cake-build/cake) - 跨平台的自动化构建系统 [http://cakebuild.net](http://cakebuild.net).
+* [CatLight](https://catlight.io) - 用来监控项目编译和任务并将状态通知给开发。不过收费的，国内的用户不用玩了。
+* [Colorful.Console](https://github.com/tomakita/Colorful.Console) - 定制化控制台的样式输出。简单说就是让你的 Console.Write 输出的内容立马高大上起来。具体效果上他们的官网看[http://colorfulconsole.com](http://colorfulconsole.com).
 * [dotnet-docker](https://github.com/dotnet/dotnet-docker) - The base Docker images for working with .NET Core and the .NET Core Tools.
-* [GitInfo](https://github.com/kzu/GitInfo) - Git and SemVer Info from MSBuild, C# and VB.
-* [GitVersioning](https://github.com/AArnott/Nerdbank.GitVersioning) - Stamp your assemblies and NuGet packages with a version from a single, simple version.txt file and include git commit IDs for non-official builds.
-* [go-dotnet](https://github.com/matiasinsaurralde/go-dotnet) - Go wrapper for the .NET Core Runtime.
+* [GitInfo](https://github.com/kzu/GitInfo) - 可以在MSBuild编译的时候，把Git的版本信息写入你的dll文件里，你就可以已git的信息做为你的版本号来用。
+* [GitVersioning](https://github.com/AArnott/Nerdbank.GitVersioning) - 也是把git信息写入你编译时的DLL。
+* [go-dotnet](https://github.com/matiasinsaurralde/go-dotnet) - 让你的.net可以被go调用。
 * [Image2Docker](https://github.com/docker/communitytools-image2docker-win) - PowerShell module which ports existing Windows application workloads to Docker.
 * [msbuild](https://github.com/Microsoft/msbuild) - The Microsoft Build Engine is a platform for building applications.
 * [Nuke](https://github.com/nuke-build/nuke) - Cross-platform build automation system.
-* [Opserver](https://github.com/opserver/Opserver) - Stack Exchange's Monitoring System.
-* [vsts-agent](https://github.com/Microsoft/vsts-agent/blob/master/README.md) - Visual Studio Team Services Build and Release Agent.
+* [Opserver](https://github.com/opserver/Opserver) - Stack Exchange's 开源的监控系统。如果没有太复杂的监控要求，直接按照到服务器后，配置一些监控的配置信息就可以使用了。
+* [vsts-agent](https://github.com/Microsoft/vsts-agent) - Visual Studio Team Services Build and Release Agent.
 
 ### Bundling and Minification
 * [BundlerMinifier](https://github.com/madskristensen/BundlerMinifier) - Visual Studio extension that let's you configure bundling and minification of JS, CSS and HTML files.
