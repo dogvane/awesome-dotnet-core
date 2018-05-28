@@ -183,10 +183,10 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [Web Markup Minifier](https://github.com/Taritsyn/WebMarkupMin) - .NET library that contains a set of markup minifiers. The objective of this project is to improve the performance of web applications by reducing the size of HTML, XHTML and XML code.
 
 ### Caching
-* [CacheManager](https://github.com/MichaCo/CacheManager) - Open source caching abstraction layer for .NET written in C#. It supports various cache providers and implements many advanced features. [http://cachemanager.michaco.net](http://cachemanager.michaco.net)
-* [Foundatio](https://github.com/exceptionless/Foundatio) - Pluggable foundation blocks for building distributed apps.
-* [Microsoft Caching](https://github.com/aspnet/Caching) - Libraries for in-memory caching and distributed caching.
-* [Stack Exchange Redis](https://github.com/StackExchange/StackExchange.Redis) - High performance general purpose redis client for .NET languages (C# etc).
+* [CacheManager](https://github.com/MichaCo/CacheManager) - 一个Cache的抽象层，在抽象层后面可以接入不用介质的Cache实现，可以是Redis, Memcached, SystemRuntimeCaching, Microsoft.Extensions.Caching.Memory, Couchbase。 [http://cachemanager.michaco.net](http://cachemanager.michaco.net)
+* [Foundatio](https://github.com/exceptionless/Foundatio) - 一个构建分布式应用的可插拔组件。它包含换成，队列，锁，消息，任务，文件存储
+* [Microsoft Caching](https://github.com/aspnet/Caching) - 微软提供的cache，支持内存模式，也支持Redis和Sql Server的分布式模式。
+* [Stack Exchange Redis](https://github.com/StackExchange/StackExchange.Redis) - .Net下用Reids必备的了。
 
 ### CMS
 * [Blogifier.Core](https://github.com/blogifierdotnet/Blogifier.Core) - ASP.NET applications to provide common blogging functionality.
@@ -363,7 +363,7 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [StrongGrid](https://github.com/Jericho/StrongGrid) - Client for SendGrid's v3 API. Not only allows you to send emails, but also allows you to bulk import contacts, manage lists and segments, create custom fields for your lists, etc. Also includes a parser for SendGrid Webhooks.
 
 ### Mathematics
-* [UnitConversion](https://github.com/Stratajet/UnitConversion) - Expansible Unit Conversion Library for .NET Core and .NET Framework.
+* [UnitConversion](https://github.com/Stratajet/UnitConversion) - 一个可扩展的单位换算组件，如果你的系统里会涉及大量的重量（kg<->磅），时间（sec<->day)，距离(1km<->mm)都可以试试。
 
 ### Misc
 * [AngleSharp](https://github.com/AngleSharp/AngleSharp) - The ultimate angle brackets parser library. It parses HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specification. Comparable to beautifulsoup4 of python.
