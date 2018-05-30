@@ -407,30 +407,30 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 
 ### ORM
 * [Entity Framework Core](https://github.com/aspnet/EntityFramework) - Familiar developer experience to previous versions of EF, including LINQ, POCO, and Code First support.
-  * [EntityFramework-Plus](https://github.com/zzzprojects/EntityFramework-Plus) - Entity Framework Utilities | Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit.
-  * [EntityFramework.Triggers](https://github.com/NickStrupat/EntityFramework.Triggers) - Trigger events for EF.
-  * [EntityFramework.Rx](https://github.com/NickStrupat/EntityFramework.Rx) - Reactive **hot** observables of your EF operations.
-  * [EntityFramework.PrimaryKey](https://github.com/NickStrupat/EntityFramework.PrimaryKey) - Easily get the primary key of any entity (including composite keys).
-  * [EntityFramework.TypedOriginalValues](https://github.com/NickStrupat/EntityFramework.TypedOriginalValues) - Get a proxy object of the orginal values of your entity (typed access to Property("...").OriginalValue).
-  * [EntityFramework.VersionedProperties](https://github.com/NickStrupat/EntityFramework.VersionedProperties) - Classes which auto-magically keep an audit history of the changes to the specified property.
-  * [LINQKit](https://github.com/scottksmith95/LINQKit) - A free set of extensions for LINQ to SQL and Entity Framework power users.
-  * [Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql) - Entity Framework Core provider for MySql built on top of mysql-net/MySqlConnector.
-* [Dapper](https://github.com/StackExchange/Dapper) - Simple object mapper for .NET.
-  * [Dapper-FluentMap](https://github.com/henkmollema/Dapper-FluentMap) - Provides a simple API to fluently map POCO properties to database columns when using Dapper.
-  * [Dommel](https://github.com/henkmollema/Dommel) - Simple CRUD operations for Dapper.
-  * [MicroOrm.Dapper.Repositories](https://github.com/phnx47/MicroOrm.Dapper.Repositories) - CRUD for Dapper.
-* [Limebean](https://nick-lucas.github.io/LimeBean/) - Hybrid-ORM, designed to be simple to use and not totally hide SQL, while having all the nice things you expect from an ORM. Inspired by RedBeanPHP.
-* [LINQ to DB (linq2db)](https://linq2db.github.io/) - The fastest LINQ database access library offering a simple, lightweight, fast, and type-safe layer between your POCO objects and your database for more than 10 database engines with full SQL support.
-* [NEventStore](https://github.com/NEventStore/NEventStore/tree/feature/dotnetcore) - Persistence library used to abstract different storage implementations when using event sourcing as storage mechanism. This library is developed with a specific focus on DDD/CQRS applications.
-* [NPoco](https://github.com/schotime/NPoco) - Simple microORM that maps the results of a query onto a POCO object. Project based on Schotime's branch of PetaPoco.
-* [NReco.Data](https://github.com/nreco/data) - Lightweight provider-independent DAL for SQL commands generation, CRUD operations and simple POCO mapping.
+  * [EntityFramework-Plus](https://github.com/zzzprojects/EntityFramework-Plus) - EF的增强工具集。包含批量操作（更新，删除），查询优化（缓存，过滤器，推迟，子查询），审计。
+  * [EntityFramework.Triggers](https://github.com/NickStrupat/EntityFramework.Triggers) - 给EF的 CRUD 操作增加触发器
+  * [EntityFramework.Rx](https://github.com/NickStrupat/EntityFramework.Rx) - 大家应该都知道数据库可以建立一个触发器把，在表插入，更新或者删除时，触发一个函数。这个项目也是类似的，在EF框架上注册一个观察者模式，监听EF框架的插入，更新删除等事件。不过看示例代码，有些复杂。
+  * [EntityFramework.PrimaryKey](https://github.com/NickStrupat/EntityFramework.PrimaryKey) - 将查询出来的实例转为已属性名为主键的字典对象。
+  * [EntityFramework.TypedOriginalValues](https://github.com/NickStrupat/EntityFramework.TypedOriginalValues) - 通过某些特殊方法来获得数据库对象在本次修改前的原始值。常见的使用场景是对数据库操作的数据做审计。
+  * [EntityFramework.VersionedProperties](https://github.com/NickStrupat/EntityFramework.VersionedProperties) - 将对象里每次变更历史自动保存到一个特定的属性里。审计或者做历史版本时比较适用。
+  * [LINQKit](https://github.com/scottksmith95/LINQKit) - EF的一些linq工具
+  * [Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql) - EF的Mysql支持。mysql的数据库连接用 mysql-net/MySqlConnector.
+* [Dapper](https://github.com/StackExchange/Dapper) - 一个简单的对象映射工具
+  * [Dapper-FluentMap](https://github.com/henkmollema/Dapper-FluentMap) - 使用 Fluent 的方式来设置Dapper的Map映射。
+  * [Dommel](https://github.com/henkmollema/Dommel) - Simple CRUD operations for Dapper.(@star:104)
+  * [MicroOrm.Dapper.Repositories](https://github.com/phnx47/MicroOrm.Dapper.Repositories) - CRUD for Dapper. (@star:1051)
+* [Limebean](https://nick-lucas.github.io/LimeBean/) - 混合了ORM的数据库访问组件。既可以ORm，也可以类似于DataRow这样以字典的方式存取数据。
+* [LINQ to DB (linq2db)](https://linq2db.github.io/) - LINQ方式操作数据库，看上去还不错，基本上主流的数据库操作都支持了。
+* [NEventStore](https://github.com/NEventStore/NEventStore/tree/feature/dotnetcore) - 聚焦在 DDD/CQRS 类型的应用上的数据存储层组件。
+* [NPoco](https://github.com/schotime/NPoco) - 基于 PetaPoco 创建分支形成的微型orm组件。
+* [NReco.Data](https://github.com/nreco/data) - 一个轻量级，高性能的，适配主流数据库的有完整CRUD的ORM组件。
 * [ServiceStack.OrmLite](https://github.com/ServiceStack/ServiceStack.OrmLite) - Light, simple and fast convention-based POCO ORM.
-* [SqlFu](https://github.com/sapiens/SqlFu) - Fast and versatile Micro-ORM.
-* [SQLStreamStore](https://github.com/SQLStreamStore/SQLStreamStore) - Stream Store library targeting SQL based implementations for .NET.
+* [SqlFu](https://github.com/sapiens/SqlFu) - 快速而且多变的ORM组件。之所以叫SqlFu，就是用函数的方式拼接处sql进行操作，有兴趣的可以点进去看文档。个人感觉很有创意。不过为啥不直接用SQL呢-_-||
+* [SQLStreamStore](https://github.com/SQLStreamStore/SQLStreamStore) - 在传统的 RDMBS\SQL 数据库里存储事件流数据，应该类似于[NEventStore](https://github.com/NEventStore/NEventStore/tree/feature/dotnetcore)。
 
 ### Profiling
-* [Glimpse](https://github.com/Glimpse/Glimpse.Prototype) - Lightweight, open-source, real-time diagnostics and insights profiler for .NET. `Unstable version`
-* [MiniProfiler](https://github.com/MiniProfiler/dotnet) - A simple but effective mini-profiler for ASP.NET websites.
+* [Glimpse](https://github.com/Glimpse/Glimpse.Prototype) - 一个 asp.net 站点（页面）的性能分析工具。[小冰知道用法](https://cn.bing.com/search?q=Glimpse+性能)。作者说已经开启V2版的计划，但是V2版最后一次更新是2017年1月21日。所以，看看就好。
+* [MiniProfiler](https://github.com/MiniProfiler/dotnet) - 一个 asp.net 站点（页面）的性能分析工具。[小冰知道用法](https://cn.bing.com/search?q=MiniProfiler)，顺便说一下，看介绍，也支持控制台程序的性能分析。
 
 ### Query Builders
 * [SqlKata](https://github.com/sqlkata/querybuilder) - Elegant Sql Query Builder, that supports complex queries, joins, sub queries, nested where conditions, vendor engine targets and more
