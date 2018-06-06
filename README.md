@@ -236,12 +236,16 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [BouncyCastle PCL](https://github.com/onovotny/BouncyCastle-PCL) - The Bouncy Castle Crypto package is a C# implementation of cryptographic algorithms and protocols.
 
 ### Database
-* [DBreeze](https://github.com/hhblaze/DBreeze) - C# .NET MONO NOSQL (key value store embedded) ACID multi-paradigm database management system.
-* [JsonFlatFileDataStore](https://github.com/ttu/json-flatfile-datastore) - Simple JSON flat file data store with support for typed and dynamic data.
-* [LiteDB](https://github.com/mbdavid/LiteDB) - .NET NoSQL Document Store in a single data file - [http://www.litedb.org](http://www.litedb.org).
-* [NoDb](https://github.com/joeaudette/NoDb) - "no database" file system storage for .NET Core/ASP.NET Core because not every project needs a database.
-* [marten](https://github.com/JasperFx/marten) - Postgresql as a Document Database and Event Store for .NET Applications [http://jasperfx.github.io/marten](http://jasperfx.github.io/marten).
-* [yessql](https://github.com/sebastienros/yessql) - .NET document database working on any RDBMS.
+* [DBreeze](https://github.com/hhblaze/DBreeze) - 一个KV存储，支持ACID的数据库管理系统。
+* [JsonFlatFileDataStore](https://github.com/ttu/json-flatfile-datastore) - 看介绍，操作接口类似于MongoDb的超微型文档操操作类库（小到不能用数据库来说），它的存储端是一个Json文件。或许这个更加适合只读的系统。star比较少，保持关注吧。
+* [LiteDB](https://github.com/mbdavid/LiteDB) - 一个.NET写的单文件文档型数据库。[http://www.litedb.org](http://www.litedb.org). 
+* [NoDb](https://github.com/joeaudette/NoDb) - 一个"no database" 的文件存储系统，因为不是所有的项目都需要数据库的。
+* [marten](https://github.com/JasperFx/marten) - 利用 Postgresql 来实现一个文档数据库，并支持事件存储。[http://jasperfx.github.io/marten](http://jasperfx.github.io/marten).
+* [yessql](https://github.com/sebastienros/yessql) - 一个构建在关系型数据库上的文档数据库。简单说，就是将对象数据序列化（Json）到数据库表里的某个字段里，如果建立了某个索引，则将索引字段的数据映射到对应的表字段上。关系型数据库支持：MySql, Sql Server, Sqlite，PostgreSql。如果你不但希望用文档型数据库的灵活性，还希望它拥有事物功能（MongoDB 3.0 支持单文档事物了）可以考虑试试。
+* 总结：
+* 如果单机用nosql，可以考虑[LiteDB](https://github.com/mbdavid/LiteDB)。[DBreeze](https://github.com/hhblaze/DBreeze) 在github上的star不是特别多，但这也是一个老牌的项目了，从codeplex转过来的，但主要是国内没人用过，介绍的文章实在没有。如果觉得LiteDB无法满足需求，但又不想用MongoDB，可以考虑看看。因为它支持多线程读写，全文检索。说道全文检索，LiteDB也可以外挂一个全文检索 [LiteDBDirectory](https://github.com/sheryever/LiteDBDirectory)，用
+* 需要多台机器访问并需要支持事物处理，则考虑[yessql](https://github.com/sebastienros/yessql)。marten虽然star也挺多，但是，能对接的数据库就只有Postgresql。
+* [NoDb](https://github.com/joeaudette/NoDb) 则比较适合会产生比较多碎片文件的应用。例如游戏的数据文件。
 
 ### Database Drivers
 * [cassandra-csharp-driver](https://github.com/datastax/csharp-driver) - DataStax C# Driver for Apache Cassandra.
@@ -440,7 +444,7 @@ Thanks to all [contributors](https://github.com/thangchung/awesome-dotnet-core/g
 * [EventStore](https://github.com/EventStore/EventStore) - The open-source, functional database with Complex Event Processing in JavaScript.
 * [Foundatio](https://github.com/exceptionless/Foundatio#queues) - A common interface with in memory, redis and azure implementations.
 * [MediatR](https://github.com/jbogard/MediatR) - Simple, unambitious mediator implementation in .NET.
- * [MediatR.Extensions.Microsoft.DependencyInjection](https://github.com/jbogard/MediatR.Extensions.Microsoft.DependencyInjection) - MediatR extensions for Microsoft.Extensions.DependencyInjection.
+* [MediatR.Extensions.Microsoft.DependencyInjection](https://github.com/jbogard/MediatR.Extensions.Microsoft.DependencyInjection) - MediatR extensions for Microsoft.Extensions.DependencyInjection.
 * [Mediator.Net](https://github.com/mayuanyang/Mediator.Net) - A simple mediator for .Net for sending command, publishing event and request response with pipelines supported.
 * [MicroBus](https://github.com/Lavinski/Enexure.MicroBus) - Simple in process mediator for .NET.
 * [netmq](https://github.com/zeromq/netmq) - 100% native C# implementation of ZeroMQ for .NET.
